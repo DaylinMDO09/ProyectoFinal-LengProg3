@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoFinal-LP3 (Daylin)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd93d87343168a609f825fc1b8bfe1f9c5452459")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+706a084228156b16ec964e50a22e5925ed62f187")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoFinal-LP3 (Daylin)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoFinal-LP3 (Daylin)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

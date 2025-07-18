@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using ProyectoFinal_LP3__Daylin_.Models;
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("BaseDeDatos")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
