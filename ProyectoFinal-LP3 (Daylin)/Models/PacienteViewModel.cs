@@ -17,5 +17,11 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Column("CEDULA")]
         [Display(Name = "Cédula del paciente")]
         public string cedulaPaciente { get; set;}
+
+        [Phone]
+        [MinLength(10)]
+        [Column("TELEFONOPACIENTE")]
+        [Display(Name = "Numero de telefono")]
+        public string telefonoPaciente { get; set;}
     }
 }
