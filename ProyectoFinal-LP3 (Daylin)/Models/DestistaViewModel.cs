@@ -19,5 +19,12 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Column("TELEFONODENTISTA")]
         [Display(Name = "Número telefónico del dentista")]
         public string telefonoDentista { get; set; }
+
+        [Required(ErrorMessage ="Debes colocar un correo electrónico válido.")]
+        [EmailAddress(ErrorMessage ="Correo inválido.")]
+        [Column("CORREODENTISTA")]
+        [Display(Name ="Correo electrónico del dentista")]
+        public string correoDentista { get; set; }
+
     }
 }
