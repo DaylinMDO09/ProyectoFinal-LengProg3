@@ -1,0 +1,36 @@
+﻿@model PacienteViewModel;
+
+<h1>Registro de pacientes</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<form asp-action="Registrar" asp-controller="Pacientes" method="post">
+	<div>
+		<label asp-for="nombrePaciente"></label>
+		<input asp-for="nombrePaciente" class="form-control" />
+		<span asp-validation-for="nombrePaciente" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="cedulaPaciente"></label>
+		<input asp-for="cedulaPaciente" class="form-control" />
+		<span asp-validation-for="cedulaPaciente"></span>
+	</div>
+	<div>
+		<label asp-for="telefonoPaciente"></label>
+		<input asp-for="telefonoPaciente" class="form-control" />
+		<span asp-validation-for="telefonoPaciente"></span>
+	</div>
+
+	<br />
+	<div>
+		<button class="btn btn-primary" type="submit">Registrar paciente</button>
+		<a href="/Pacientes/Lista" class="btn btn-secondary">Lista de pacientes registrados</a>
+	</div>
+</form>
+
+@section Scripts {
+		<partial name="_ValidationScriptsPartial" />
+}

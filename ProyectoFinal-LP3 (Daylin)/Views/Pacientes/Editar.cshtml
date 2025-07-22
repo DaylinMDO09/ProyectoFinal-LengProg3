@@ -1,0 +1,37 @@
+﻿@model PacienteViewModel;
+
+<h1>Editar datos del paciente</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<form asp-action="Editar" asp-controller="Pacientes" method="post">
+	<input type="hidden" asp-for="IdPaciente" />
+	<div>
+		<label asp-for="nombrePaciente"></label>
+		<input asp-for="nombrePaciente" class="form-control" />
+		<span asp-validation-for="nombrePaciente" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="cedulaPaciente"></label>
+		<input asp-for="cedulaPaciente" class="form-control" />
+		<span asp-validation-for="cedulaPaciente"></span>
+	</div>
+	<div>
+		<label asp-for="telefonoPaciente"></label>
+		<input asp-for="telefonoPaciente" class="form-control" />
+		<span asp-validation-for="telefonoPaciente"></span>
+	</div>
+
+	<br />
+	<div>
+		<button class="btn btn-primary" type="submit">Guardar cambios</button>
+		<a href="/Pacientes/Lista" class="btn btn-secondary">Cancelar</a>
+	</div>
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

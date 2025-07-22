@@ -1,0 +1,41 @@
+﻿@model List<ProyectoFinal_LP3__Daylin_.Models.PacienteViewModel>
+
+<h1>Listado de pacientes</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<div class="row">
+	<div class="col-12">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nombre del paciente</th>
+					<th>Cédula del paciente</th>
+					<th>N° telefónico del paciente</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{
+					foreach(var p in Model)
+					{
+						<tr>
+						<td>@p.IdPaciente</td>
+						<td>@p.nombrePaciente</td>
+						<td>@p.cedulaPaciente</td>
+						<td>@p.telefonoPaciente</td>
+						<td>
+						<a asp-action="Editar" asp-route-idp="@p.IdPaciente" class="btn btn-secondary">Editar datos de este paciente</a>
+						<a asp-action="Eliminar" asp-route-idp="@p.IdPaciente" class="btn btn-danger">Eliminar paciente</a>
+						</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+		<a href="/Pacientes/Index" class="btn btn-link">Volver</a>
+	</div>
+</div>
