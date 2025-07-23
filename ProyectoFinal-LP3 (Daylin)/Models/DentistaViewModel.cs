@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProyectoFinal_LP3__Daylin_.Models
 {
-    public class DestistaViewModel
+    public class DentistaViewModel
     {
         [Key]
         [Column("IDDENTISTA")]

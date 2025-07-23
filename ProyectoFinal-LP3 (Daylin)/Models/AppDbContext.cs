@@ -10,5 +10,6 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         
         public DbSet<PacienteViewModel> Pacientes { get; set; }
         public DbSet<MotivoViewModel> Motivos { get; set; }
+        public DbSet<DentistaViewModel> Dentistas { get; set; }
     }
 }
