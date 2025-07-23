@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProyectoFinal_LP3__Daylin_.Models;
+using System.Text;
 
 namespace ProyectoFinal_LP3__Daylin_.Controllers
 {
@@ -80,6 +82,25 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 return RedirectToAction("Lista");
             }
             return View(motivo);
+        }
+
+        public ActionResult ExportarCSV()
+        {
+            var motivos = _context.Motivos.ToList();
+
+            var csv = new StringBuilder();
+            csv.AppendLine("\"Id\",\"Descripción del motivo\"");
+
+            foreach (var m in motivos)
+            {
+                csv.AppendLine($"\"{m.idMotivo}\",\"{m.descripcionMotivo}\"");
+            }
+
+            var bom = Encoding.UTF8.GetPreamble();
+            var csvBytes = Encoding.UTF8.GetBytes(csv.ToString());
+            var finalBytes = bom.Concat(csvBytes).ToArray();
+
+            return File(finalBytes, "text/csv", "Motivos.csv");
         }
     }
 }

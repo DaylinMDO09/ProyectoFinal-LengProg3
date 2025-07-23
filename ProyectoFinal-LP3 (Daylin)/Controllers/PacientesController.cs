@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProyectoFinal_LP3__Daylin_.Models;
+using System.Text;
 
 namespace ProyectoFinal_LP3__Daylin_.Controllers
 {
@@ -94,6 +95,24 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 return RedirectToAction("Lista");
             }
             return View(paciente); 
+        }
+        public ActionResult ExportarCSV()
+        {
+            var pacientes = _context.Pacientes.ToList();
+
+            var csv = new StringBuilder();
+            csv.AppendLine("\"Id\",\"Nombre del paciente\",\"Cédula del paciente\",\"N° telefónico del paciente\"");
+
+            foreach (var p in pacientes)
+            {
+                csv.AppendLine($"\"{p.IdPaciente}\",\"{p.nombrePaciente}\",\"{p.cedulaPaciente}\",\"{p.telefonoPaciente}\"");
+            }
+
+            var bom = Encoding.UTF8.GetPreamble();
+            var csvBytes = Encoding.UTF8.GetBytes(csv.ToString());
+            var finalBytes = bom.Concat(csvBytes).ToArray();
+
+            return File(finalBytes, "text/csv", "Pacientes.csv");
         }
     }
 }
