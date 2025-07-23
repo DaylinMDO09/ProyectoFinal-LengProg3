@@ -86,7 +86,7 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         public IActionResult Eliminar(int idp)
         {
             var paciente = _context.Pacientes.FirstOrDefault(p => p.IdPaciente == idp);
-            if (paciente == null)
+            if (paciente != null)
             {
                 _context.Pacientes.Remove(paciente);
                 _context.SaveChanges();

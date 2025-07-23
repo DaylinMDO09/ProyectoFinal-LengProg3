@@ -1,0 +1,26 @@
+﻿@model MotivoViewModel;
+
+<h1>Modificar texto del motivo</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<form asp-action="Editar" asp-controller="Motivos" method="post">
+	<input type="hidden" asp-for="idMotivo" />
+	<div>
+		<label asp-for="descripcionMotivo"></label>
+		<input asp-for="descripcionMotivo" class="form-control" />
+		<span asp-validation-for="descripcionMotivo" class="text-danger"></span>
+	</div>
+
+	<br />
+	<div>
+		<button class="btn btn-primary" type="submit">Guardar cambios</button>
+		<a href="/Motivos/Lista" class="btn btn-danger">Cancelar</a>
+	</div>
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
