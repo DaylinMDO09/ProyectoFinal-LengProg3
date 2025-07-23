@@ -23,10 +23,8 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
             if (cedulaexistente)
             {
                 TempData["Mensaje"] = "Esta cédula ya está registrada.";
-                return RedirectToAction("Index");
             }
-
-            if (ModelState.IsValid)
+            else if (ModelState.IsValid)
             {
                 _context.Pacientes.Add(paciente);
                 _context.SaveChanges();

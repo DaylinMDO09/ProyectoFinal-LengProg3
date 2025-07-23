@@ -46,8 +46,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T02:34:27.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T02:34:27.149Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "Views\\Pacientes\\Lista.cshtml",
               "ViewState": "AgIAAAoAAAAAAAAAAAAswCYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T02:25:13.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T02:25:13.765Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Views\\Pacientes\\Editar.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T02:23:17.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T02:23:17.385Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "Views\\Pacientes\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T02:01:48.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T02:01:48.453Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "Controllers\\PacientesController.cs",
               "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\PacientesController.cs*",
               "RelativeToolTip": "Controllers\\PacientesController.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA2wCEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-22T01:31:33.128Z",
               "EditorCaption": ""

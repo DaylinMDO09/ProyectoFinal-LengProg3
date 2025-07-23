@@ -8,7 +8,7 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Key]
         public int IdPaciente { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El nombre del paciente debe ser ingresado")]
         [Column("NOMBREPACIENTE")]
         [Display(Name = "Nombre completo del paciente")]
         public string nombrePaciente { get; set; }
@@ -18,7 +18,7 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Display(Name = "Cédula del paciente")]
         public string cedulaPaciente { get; set;}
 
-        [Phone]
+        [Phone(ErrorMessage = "El número telefónico del paciente debe ser ingresado")]
         [MinLength(10)]
         [Column("TELEFONOPACIENTE")]
         [Display(Name = "Numero de telefono")]
