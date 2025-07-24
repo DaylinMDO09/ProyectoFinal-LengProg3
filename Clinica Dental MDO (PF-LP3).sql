@@ -41,4 +41,4 @@ CREATE TABLE CITAS
 					END
 )
 
-select * from DENTISTAS
+select * from MOTIVOS
