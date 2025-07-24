@@ -40,3 +40,5 @@ CREATE TABLE CITAS
 					ELSE 'FINALIZADO'
 					END
 )
+
+select * from DENTISTAS

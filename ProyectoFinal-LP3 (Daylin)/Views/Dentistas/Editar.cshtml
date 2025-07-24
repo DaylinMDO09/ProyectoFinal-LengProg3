@@ -1,0 +1,36 @@
+﻿@model DentistaViewModel;
+
+<h1>Modificar datos de odontólogos</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<form asp-action="Editar" asp-controller="Dentistas" method="post">
+	<div>
+		<label asp-for="nombreDentista"></label>
+		<input asp-for="nombreDentista" class="form-control" />
+		<span asp-validation-for="nombreDentista" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="correoDentista"></label>
+		<input asp-for="correoDentista" class="form-control" />
+		<span asp-validation-for="correoDentista" class="text-danger"></span>
+	</div>
+	<div>
+		<label asp-for="telefonoDentista"></label>
+		<input asp-for="telefonoDentista" class="form-control" />
+		<span asp-validation-for="telefonoDentista" class="text-danger"></span>
+	</div>
+
+	<br />
+	<div>
+		<button class="btn btn-primary" type="submit">Guardar cambios</button>
+		<a href="/Dentistas/Lista" class="btn btn-danger">Cancelar</a>
+	</div>
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

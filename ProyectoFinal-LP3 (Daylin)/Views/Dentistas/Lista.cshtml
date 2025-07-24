@@ -1,0 +1,44 @@
+﻿@model List<ProyectoFinal_LP3__Daylin_.Models.DentistaViewModel>
+
+<h1>Listado de odontólogos registrados</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<div class="row">
+	<div class="col-12">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nombre completo del doctor</th>
+					<th>Correo electrónico del doctor</th>
+					<th>N° telefónico del doctor</th>
+				</tr>
+			</thead>
+			<tbody>
+				@{
+					foreach(var d in Model)
+					{
+						<tr>
+						<td>@d.idDentista</td>
+						<td>@d.nombreDentista</td>
+						<td>@d.correoDentista</td>
+						<td>@d.telefonoDentista</td>
+						<td>
+						<a asp-action="Editar" asp-route-idd="@d.idDentista" class="btn btn-secondary">Editar datos de este odontólogo</a>
+						<a asp-action="Eliminar" asp-route-idd="@d.idDentista" class="btn btn-danger">Eliminar este odontólogo</a>
+						</td>
+						</tr>
+					}
+				}
+			</tbody>
+		</table>
+		<a href="/Dentistas/Index" class="btn btn-link">Volver</a>
+		<a href="@Url.Action("ExportarCSV", "Dentistas")" class="btn btn-link">
+			<i class="fa fa-file-csv"></i> Exportar a .CSV
+		</a>
+	</div>
+</div>
