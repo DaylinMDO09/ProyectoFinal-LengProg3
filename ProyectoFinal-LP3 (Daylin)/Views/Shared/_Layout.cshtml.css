@@ -5,6 +5,8 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  background: linear-gradient(90deg, #2c3e50, #3498db);
+  color: white;
 }
 
 a {
