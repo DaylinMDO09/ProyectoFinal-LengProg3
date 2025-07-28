@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProyectoFinal_LP3__Daylin_.Controllers;
 
 namespace ProyectoFinal_LP3__Daylin_.Models
 {
@@ -11,5 +12,6 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         public DbSet<PacienteViewModel> Pacientes { get; set; }
         public DbSet<MotivoViewModel> Motivos { get; set; }
         public DbSet<DentistaViewModel> Dentistas { get; set; }
+        public DbSet<CitaViewModel> Citas { get; set; }
     }
 }
