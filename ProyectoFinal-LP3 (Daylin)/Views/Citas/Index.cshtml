@@ -1,0 +1,62 @@
+﻿@model CitaViewModel;
+
+<h1>Registro de citas</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<form asp-action="Registrar" asp-controller="Citas" method="post">
+	<div>
+		<label asp-for="idPaciente"></label>
+		<select asp-for="idPaciente" asp-items="ViewBag.Pacientes" class="form-control">
+			<option value="">Seleccionar paciente</option>
+		</select>
+		<span asp-validation-for="idPaciente" class="text-danger"></span>
+	</div>
+
+	<div>
+		<label asp-for="fechaCita"></label>
+		<input asp-for="fechaCita" type="date" class="form-control" />
+		<span asp-validation-for="fechaCita" class="text-danger"></span>
+	</div>
+
+	<div>
+		<label asp-for="horaCita"></label>
+		<input asp-for="horaCita" type="time" class="form-control" />
+		<span asp-validation-for="horaCita" class="text-danger"></span>
+	</div>
+
+	<div>
+		<label asp-for="duracionCita"></label>
+		<input asp-for="duracionCita" class="form-control" />
+		<span asp-validation-for="duracionCita" class="text-danger"></span>
+	</div>
+
+	<div>
+		<label asp-for="idDentista"></label>
+		<select asp-for="idDentista" asp-items="ViewBag.Dentistas" class="form-control">
+			<option value="">Selecciona el odontólogo</option>
+		</select>
+		<span asp-validation-for="idDentista" class="text-danger"></span>
+	</div>
+
+	<div>
+		<label asp-for="idMotivo"></label>
+		<select asp-for="idMotivo" asp-items="ViewBag.Motivos" class="form-control">
+			<option value="">Selecciona el motivo de la cita</option>
+		</select>
+		<span asp-validation-for="idMotivo" class="text-danger"></span>
+	</div>
+
+	<br />
+	<div>
+		<button class="btn btn-primary" type="submit">Agendar cita</button>
+		<a href="/Citas/Lista" class="btn btn-secondary">Lista de citas agendadas</a>
+	</div>
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

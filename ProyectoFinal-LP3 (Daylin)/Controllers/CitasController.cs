@@ -14,59 +14,58 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         }
         public IActionResult Index()
         {
-            var model = new CitaViewModel()
+
+            ViewBag.Pacientes = _context.Pacientes
+            .Select(p => new SelectListItem
             {
-                Pacientes = _context.Pacientes
-                .Select(p => new SelectListItem
-                {
-                    Value = p.IdPaciente.ToString(),
-                    Text = p.nombrePaciente + "-" + p.cedulaPaciente
-                }).ToList(),
+                Value = p.IdPaciente.ToString(),
+                Text = p.nombrePaciente + "-" + p.cedulaPaciente
+            }).ToList();
 
-                Dentistas = _context.Dentistas
-                .Select(d => new SelectListItem
-                {
-                    Value = d.idDentista.ToString(),
-                    Text = d.nombreDentista
-                }).ToList(),
+            ViewBag.Dentistas = _context.Dentistas
+            .Select(d => new SelectListItem
+            {
+                Value = d.idDentista.ToString(),
+                Text = d.nombreDentista
+            }).ToList();
 
-                Motivos = _context.Motivos
-                .Select(m => new SelectListItem
-                {
-                    Value = m.idMotivo.ToString(),
-                    Text = m.descripcionMotivo
-                }).ToList()
-            };
-            return View(model);
+            ViewBag.Motivos = _context.Motivos
+            .Select(m => new SelectListItem
+            {
+                Value = m.idMotivo.ToString(),
+                Text = m.descripcionMotivo
+            }).ToList();
+            
+            return View(new CitaViewModel());
         }
 
         public IActionResult Registrar(CitaViewModel cita)
         {
-            if (ModelState.IsValid)
-            {
-                cita.Pacientes = _context.Pacientes
-                .Select(p => new SelectListItem
-                {
-                    Value = p.IdPaciente.ToString(),
-                    Text = p.nombrePaciente + "-" + p.cedulaPaciente
-                }).ToList();
+            //if (ModelState.IsValid)
+            //{
+            //    cita.Pacientes = _context.Pacientes
+            //    .Select(p => new SelectListItem
+            //    {
+            //        Value = p.IdPaciente.ToString(),
+            //        Text = p.nombrePaciente + "-" + p.cedulaPaciente
+            //    }).ToList();
 
-                cita.Dentistas = _context.Dentistas
-                .Select(d => new SelectListItem
-                {
-                    Value = d.idDentista.ToString(),
-                    Text = d.nombreDentista
-                }).ToList();
+            //    cita.Dentistas = _context.Dentistas
+            //    .Select(d => new SelectListItem
+            //    {
+            //        Value = d.idDentista.ToString(),
+            //        Text = d.nombreDentista
+            //    }).ToList();
 
-                cita.Motivos = _context.Motivos
-                .Select(m => new SelectListItem
-                {
-                    Value = m.idMotivo.ToString(),
-                    Text = m.descripcionMotivo
-                }).ToList();
+            //    cita.Motivos = _context.Motivos
+            //    .Select(m => new SelectListItem
+            //    {
+            //        Value = m.idMotivo.ToString(),
+            //        Text = m.descripcionMotivo
+            //    }).ToList();
                 
-                return View(cita);
-            }
+            //    return View(cita);
+            //}
 
             DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
             DateTime finCita = inicioCita.AddMinutes(cita.duracionCita);

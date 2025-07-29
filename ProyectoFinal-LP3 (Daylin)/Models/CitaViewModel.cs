@@ -15,8 +15,6 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Display(Name ="Nombre del paciente")]
         public int idPaciente { get; set; }
 
-        public IEnumerable<SelectListItem> Pacientes { get; set; }
-
         [Required]
         [DataType(DataType.DateTime)]
         [Column("FECHA")]
@@ -38,14 +36,10 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Display(Name ="Nombre del dentista")]
         public int idDentista { get; set; }
 
-        public IEnumerable<SelectListItem> Dentistas { get; set; }
-
-        [Required(ErrorMessage = "Debes seleccionar el motivo del paciente para agendar la cita.")]
+       [Required(ErrorMessage = "Debes seleccionar el motivo del paciente para agendar la cita.")]
         [Column("IDMOTIVO")]
         [Display(Name = "Motivo de la cita")]
         public int idMotivo { get; set; }
-
-        public IEnumerable<SelectListItem> Motivos { get; set; }
 
         public string Estado => CalculoEstado();
         public TimeSpan TiempoRestante => fechaCita.Add(horaCita).Subtract(DateTime.Now);
