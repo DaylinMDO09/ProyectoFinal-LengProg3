@@ -1,0 +1,60 @@
+﻿@model List<ProyectoFinal_LP3__Daylin_.Models.CitaViewModel>
+
+<h1>Listado de citas agendadas</h1>
+
+@if (TempData["Mensaje"] != null)
+{
+	<div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<div class="row">
+	<div class="col-12">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Paciente</th>
+					<th>Fecha de la cita</th>
+					<th>Hora de la cita</th>
+					<th>Duración de la cita</th>
+					<th>Dentista</th>
+					<th>Motivo</th>
+					<th>Estado</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var c in Model)
+				{
+					<tr>
+						<td>@c.idCita</td>
+						<td>@c.Paciente?.nombrePaciente @c.Paciente?.cedulaPaciente</td>
+						<td>@c.fechaCita.ToShortDateString()</td>
+						<td>@c.horaCita</td>
+						<td>@c.duracionCita</td>
+						<td>@c.Dentista?.nombreDentista</td>
+						<td>@c.Motivo?.descripcionMotivo</td>
+						<td>@{
+								var inicioCita = c.fechaCita.Add(c.horaCita);
+								var finCita = inicioCita.AddMinutes(c.duracionCita);
+								var ahoraCita = DateTime.Now;
+								var estadoCita = "";
+
+								if (ahoraCita < inicioCita)
+									estadoCita = "Cita vigente";
+								else if (ahoraCita >= inicioCita && ahoraCita <= finCita)
+									estadoCita = "Cita en proceso";
+								else
+									estadoCita = "Cita finalizada con exito";
+
+									@estadoCita
+							}</td>
+							<td>
+							
+							</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
