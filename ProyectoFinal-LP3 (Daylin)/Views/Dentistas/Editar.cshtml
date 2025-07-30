@@ -8,6 +8,7 @@
 }
 
 <form asp-action="Editar" asp-controller="Dentistas" method="post">
+	<input type="hidden" asp-for="idDentista" />
 	<div>
 		<label asp-for="nombreDentista"></label>
 		<input asp-for="nombreDentista" class="form-control" />

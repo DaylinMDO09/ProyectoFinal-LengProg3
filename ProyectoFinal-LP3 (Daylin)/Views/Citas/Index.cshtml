@@ -9,7 +9,7 @@
 
 <form asp-action="Registrar" asp-controller="Citas" method="post">
 	<div>
-		<label asp-for="idPaciente"></label>
+		<label asp-for="idPaciente">Elegir paciente (si no está en esta lista <a href="/Pacientes/Index">haz click aquí</a> para registrarlo)</label>
 		<select asp-for="idPaciente" asp-items="ViewBag.Pacientes" class="form-control">
 			<option value="">Seleccionar paciente</option>
 		</select>
@@ -35,7 +35,7 @@
 	</div>
 
 	<div>
-		<label asp-for="idDentista"></label>
+		<label asp-for="idDentista">Elegir odontólogo (si no está en esta lista <a href="/Dentistas/Index">haz click aquí</a> para registrarlo)</label>
 		<select asp-for="idDentista" asp-items="ViewBag.Dentistas" class="form-control">
 			<option value="">Selecciona el odontólogo</option>
 		</select>
@@ -43,7 +43,7 @@
 	</div>
 
 	<div>
-		<label asp-for="idMotivo"></label>
+		<label asp-for="idMotivo">Elegir motivo (si no está en esta lista <a href="/Motivos/Index">haz click aquí</a> para registrarlo)</label>
 		<select asp-for="idMotivo" asp-items="ViewBag.Motivos" class="form-control">
 			<option value="">Selecciona el motivo de la cita</option>
 		</select>
