@@ -44,11 +44,6 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         [HttpPost]
         public IActionResult Registrar(CitaViewModel cita)
         {
-            if (cita.fechaCita.Date < DateTime.Now.Date)
-            {
-                TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha indicada no es correcta. Por favor verifique que sea una fecha a futuro.";
-            }
-
             ViewBag.Pacientes = _context.Pacientes
                 .Select(p => new SelectListItem
                 {
@@ -68,28 +63,35 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
             {
                 Value = m.idMotivo.ToString(),
                 Text = m.descripcionMotivo
-            }).ToList();            
+            }).ToList();
 
-            DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
-            DateTime finCita = inicioCita.AddMinutes(cita.duracionCita);
-
-            var citarepetida = _context.Citas.Where(c => c.idDentista == cita.idDentista
-            && c.fechaCita == cita.fechaCita.Date).AsEnumerable().Any(c => inicioCita < c.fechaCita.Add
-            (c.horaCita).AddMinutes((double)c.duracionCita) && finCita > c.fechaCita.Add(c.horaCita));
-
-            if (citarepetida)
+            if (cita.fechaCita.Date < DateTime.Now.Date)
             {
-                TempData["Mensaje"] = "El dentista tiene una cita en ese horario. Por favor indicar otro.";
+                TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha indicada no es correcta. Por favor verifique que sea una fecha a futuro.";
+                return View("Index", cita);
             }
-            else if (ModelState.IsValid)
-            {
-                _context.Citas.Add(cita);
-                _context.SaveChanges();
-                TempData["Mensaje"] = "Citas agregada correctamente.";
-                return RedirectToAction("Lista");
-            }
+
+                DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
+                DateTime finCita = inicioCita.AddMinutes(cita.duracionCita);
+
+                var citarepetida = _context.Citas.Where(c => c.idDentista == cita.idDentista
+                && c.fechaCita == cita.fechaCita.Date).AsEnumerable().Any(c => inicioCita < c.fechaCita.Add
+                (c.horaCita).AddMinutes((double)c.duracionCita) && finCita > c.fechaCita.Add(c.horaCita));
+
+                if (citarepetida)
+                {
+                    TempData["Mensaje"] = "El dentista tiene una cita en ese horario. Por favor indicar otro.";
+                }
+                else if (ModelState.IsValid)
+                {
+                    _context.Citas.Add(cita);
+                    _context.SaveChanges();
+                    TempData["Mensaje"] = "Citas agregada correctamente.";
+                    return RedirectToAction("Lista");
+                }            
             return View("Index", cita);
         }
+        
 
         public IActionResult Lista()
         {
