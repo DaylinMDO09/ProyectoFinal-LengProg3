@@ -16,7 +16,7 @@
 					<th>Paciente</th>
 					<th>Fecha de la cita</th>
 					<th>Hora de la cita</th>
-					<th>Duración de la cita</th>
+					<th>Duración de la cita (en minutos)</th>
 					<th>Dentista</th>
 					<th>Motivo</th>
 					<th>Estado</th>
@@ -28,12 +28,12 @@
 				{
 					<tr>
 						<td>@c.idCita</td>
-						<td>@c.Paciente?.nombrePaciente @c.Paciente?.cedulaPaciente</td>
+						<td>@c.Paciente.nombrePaciente &ndash; @c.Paciente.cedulaPaciente</td>
 						<td>@c.fechaCita.ToShortDateString()</td>
 						<td>@c.horaCita</td>
 						<td>@c.duracionCita</td>
-						<td>@c.Dentista?.nombreDentista</td>
-						<td>@c.Motivo?.descripcionMotivo</td>
+						<td>@c.Dentista.nombreDentista</td>
+						<td>@c.Motivo.descripcionMotivo</td>
 						<td>@{
 								var inicioCita = c.fechaCita.Add(c.horaCita);
 								var finCita = inicioCita.AddMinutes(c.duracionCita);
@@ -46,7 +46,6 @@
 									estadoCita = "Cita en proceso";
 								else
 									estadoCita = "Cita finalizada con exito";
-
 									@estadoCita
 							}</td>
 							<td>

@@ -8,15 +8,15 @@ namespace ProyectoFinal_LP3__Daylin_.Models
     {
         [Key]
         [Column("IDCITA")]
-        public int idCita { get; set; }
+        public int? idCita { get; set; }
 
         [Required(ErrorMessage ="Debes seleccionar un paciente para la cita.")]
         [Column("IDPACIENTE")]
         [Display(Name ="Nombre del paciente")]
-        public int idPaciente { get; set; }
+        public int? idPaciente { get; set; }
 
         [ForeignKey("idPaciente")]
-        public PacienteViewModel Paciente { get; set; }
+        public PacienteViewModel? Paciente { get; set; }
 
         [Required]
         [DataType(DataType.DateTime)]
@@ -37,18 +37,18 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Required(ErrorMessage ="Debes seleccionar el nombre del dentista que antenderá al paciente.")]
         [Column("IDDENTISTA")]
         [Display(Name ="Nombre del dentista")]
-        public int idDentista { get; set; }
+        public int? idDentista { get; set; }
 
         [ForeignKey("idDentista")]
-        public DentistaViewModel Dentista { get; set; }
+        public DentistaViewModel? Dentista { get; set; }
 
        [Required(ErrorMessage = "Debes seleccionar el motivo del paciente para agendar la cita.")]
         [Column("IDMOTIVO")]
         [Display(Name = "Motivo de la cita")]
-        public int idMotivo { get; set; }
+        public int? idMotivo { get; set; }
 
         [ForeignKey("idMotivo")]
-        public MotivoViewModel Motivo { get; set; }
+        public MotivoViewModel? Motivo { get; set; }
 
         public string Estado => CalculoEstado();
         public TimeSpan TiempoRestante => fechaCita.Add(horaCita).Subtract(DateTime.Now);
