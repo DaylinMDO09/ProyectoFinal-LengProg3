@@ -41,4 +41,3 @@ CREATE TABLE CITAS
 					END
 )
 
-select * from MOTIVOS
