@@ -7,20 +7,28 @@
       "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\models\\citaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:models\\citaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\controllers\\dentistascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:controllers\\dentistascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\views\\citas\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:views\\citas\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\models\\citaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:models\\citaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\views\\motivos\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:views\\motivos\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\views\\citas\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:views\\citas\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\views\\motivos\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:views\\motivos\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,13 +42,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Lista.cshtml",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Citas\\Lista.cshtml",
               "RelativeDocumentMoniker": "Views\\Citas\\Lista.cshtml",
               "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Citas\\Lista.cshtml",
               "RelativeToolTip": "Views\\Citas\\Lista.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAowDoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-29T23:37:04.91Z",
               "IsPinned": true,
@@ -52,9 +60,9 @@
               "Title": "CitasController.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\CitasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitasController.cs",
-              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\CitasController.cs*",
-              "RelativeToolTip": "Controllers\\CitasController.cs*",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwEYAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\CitasController.cs",
+              "RelativeToolTip": "Controllers\\CitasController.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAALEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T02:43:09.63Z",
               "IsPinned": true,
@@ -62,13 +70,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CitaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\CitaViewModel.cs",
               "RelativeDocumentMoniker": "Models\\CitaViewModel.cs",
-              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\CitaViewModel.cs*",
-              "RelativeToolTip": "Models\\CitaViewModel.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAA9wCAAAABRAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\CitaViewModel.cs",
+              "RelativeToolTip": "Models\\CitaViewModel.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAwD0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T02:44:04.982Z",
               "IsPinned": true,
@@ -84,28 +92,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DentistasController.cs",
-              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\DentistasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DentistasController.cs",
-              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\DentistasController.cs",
-              "RelativeToolTip": "Controllers\\DentistasController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwDsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T00:32:24.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PacientesController.cs",
-              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\PacientesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PacientesController.cs",
-              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\PacientesController.cs",
-              "RelativeToolTip": "Controllers\\PacientesController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwDoAAACQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T00:27:47.697Z",
+              "DocumentIndex": 5,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Citas\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Citas\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Citas\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Citas\\Editar.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T02:50:59.503Z",
               "EditorCaption": ""
             }
           ]
@@ -121,6 +116,66 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "2372966f-f07e-43ed-86ff-aca0e85d60b9",
+        "Display": 0,
+        "X": 972,
+        "Y": 27,
+        "Width": 920,
+        "Height": 946,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DentistasController.cs",
+              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\DentistasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DentistasController.cs",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\DentistasController.cs",
+              "RelativeToolTip": "Controllers\\DentistasController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwEIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T02:34:25.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Lista.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Motivos\\Lista.cshtml",
+              "RelativeDocumentMoniker": "Views\\Motivos\\Lista.cshtml",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Motivos\\Lista.cshtml",
+              "RelativeToolTip": "Views\\Motivos\\Lista.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T02:47:18.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Motivos\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Motivos\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Motivos\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Motivos\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T02:51:07.104Z",
+              "EditorCaption": ""
             }
           ]
         }

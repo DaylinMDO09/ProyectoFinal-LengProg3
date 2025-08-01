@@ -48,9 +48,17 @@
 									estadoCita = "Cita finalizada con exito";
 									@estadoCita
 							}</td>
-							<td>
-							
-							</td>
+						<td>
+							@if (estadoCita != "Cita finalizada con exito")
+							{
+								<a asp-action="Editar" asp-route-idc="@c.idCita" class="btn btn-secondary">Modificar cita</a>
+								<a asp-action="Eliminar" asp-route-idc="@c.idCita" class="btn btn-danger">Cancelar cita</a>
+							}
+							else
+							{
+								<h6>No se puede modificar o eliminar esta cita</h6>
+							}
+						</td>
 					</tr>
 				}
 			</tbody>
