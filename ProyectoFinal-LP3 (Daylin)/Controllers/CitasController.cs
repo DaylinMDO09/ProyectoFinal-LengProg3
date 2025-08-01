@@ -65,9 +65,16 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 Text = m.descripcionMotivo
             }).ToList();
 
-            if (cita.fechaCita.Date < DateTime.Now.Date)
+            //if (cita.fechaCita.Date < DateTime.Now.Date)
+            //{
+            //    TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha indicada no es correcta. Por favor verifique que sea una fecha a futuro.";
+            //    return View("Index", cita);
+            //}            
+
+            DateTime fechahoraCita = cita.fechaCita.Date.Add(cita.horaCita);
+            if (fechahoraCita <= DateTime.Now)
             {
-                TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha indicada no es correcta. Por favor verifique que sea una fecha a futuro.";
+                TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha y hora indicadas no son correctas. Por favor indicar una fecha y hora a futuro.";
                 return View("Index", cita);
             }
 
@@ -162,9 +169,10 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 Text = m.descripcionMotivo
             }).ToList();
 
-            if (cita.fechaCita.Date < DateTime.Now.Date)
+            DateTime fechahoraCita = cita.fechaCita.Date.Add(cita.horaCita);
+            if (fechahoraCita <= DateTime.Now)
             {
-                TempData["Mensaje"] = "No es posible editar la fecha de esta agenda porque la fecha no es correcta. Por favor verifique que sea una fecha a futuro.";
+                TempData["Mensaje"] = "No es posible modificar esta cita porque la fecha y hora indicadas no son correctas. Verifique qeu la fecha y hora sean válidos.";
                 return View("Editar", cita);
             }
 
@@ -173,7 +181,7 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
 
             var citarepetida = _context.Citas.Where(c => c.idDentista == cita.idDentista
             && c.fechaCita == cita.fechaCita.Date).AsEnumerable().Any(c => inicioCita < c.fechaCita.Add
-            (c.horaCita).AddMinutes((double)c.duracionCita) && finCita > c.fechaCita.Add(c.horaCita) && c.idCita == cita.idCita);
+            (c.horaCita).AddMinutes((double)c.duracionCita) && finCita > c.fechaCita.Add(c.horaCita) && c.idCita != cita.idCita);
 
 
             if (citarepetida)
