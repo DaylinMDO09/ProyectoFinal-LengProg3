@@ -30,6 +30,7 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         public TimeSpan horaCita { get; set; }
 
         [Required]
+        [Range(15, 60, ErrorMessage = "La duración debe ser entre 15 y 60 minutos.")]
         [Column("DURACION")]
         [Display(Name ="Duración de la cita (en minutos).")]
         public int duracionCita { get; set; }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal_LP3__Daylin_.Models;
+using System.Text;
 
 namespace ProyectoFinal_LP3__Daylin_.Controllers
 {
@@ -16,7 +17,6 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-
             ViewBag.Pacientes = _context.Pacientes
             .Select(p => new SelectListItem
             {
@@ -71,7 +71,7 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 return View("Index", cita);
             }
 
-                DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
+            DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
                 DateTime finCita = inicioCita.AddMinutes(cita.duracionCita);
 
                 var citarepetida = _context.Citas.Where(c => c.idDentista == cita.idDentista
@@ -81,14 +81,14 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 if (citarepetida)
                 {
                     TempData["Mensaje"] = "El dentista tiene una cita en ese horario. Por favor indicar otro.";
-                }
-                else if (ModelState.IsValid)
+                }                
+                else if (!ModelState.IsValid)
                 {
                     _context.Citas.Add(cita);
                     _context.SaveChanges();
                     TempData["Mensaje"] = "Citas agregada correctamente.";
                     return RedirectToAction("Lista");
-                }            
+                }         
             return View("Index", cita);
         }
         
@@ -104,6 +104,41 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
             return View(cita);
             //var cita = _context.Citas.ToList();
             //return View(cita);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public ActionResult ExportarCSV()
+        {
+            var citas = _context.Citas
+            .Include(c => c.Paciente)
+            .Include(c => c.Dentista)
+            .Include(c => c.Motivo)
+             .ToList();
+
+            var csv = new StringBuilder();
+            csv.AppendLine("\"Id\",\"Datos del paciente\",\"Fecha de la cita\",\"Hora de la cita\",\"Duración (en minutos)\",\"Nombre del dentista\",\"Motivo de la visita\",\"Estado de la cita\"");
+
+            foreach (var c in citas)
+            {
+                csv.AppendLine($"\"{c.idCita}\",\"{c.Paciente.nombrePaciente + " - " + c.Paciente.cedulaPaciente}\",\"{c.fechaCita.ToShortDateString()}\",\"{c.horaCita}\",\"{c.duracionCita}\",\"{c.Dentista.nombreDentista}\",\"{c.Motivo.descripcionMotivo}\",\"{c.Estado}\"");
+            }
+
+            var bom = Encoding.UTF8.GetPreamble();
+            var csvBytes = Encoding.UTF8.GetBytes(csv.ToString());
+            var finalBytes = bom.Concat(csvBytes).ToArray();
+
+            return File(finalBytes, "text/csv", "Citas Agendadas.csv");
         }
     }
 }

@@ -56,7 +56,7 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         [HttpPost]
         public IActionResult Editar(DentistaViewModel dentista)
         {
-            var correodentista = _context.Dentistas.Any(d => d.correoDentista == dentista.correoDentista);
+            var correodentista = _context.Dentistas.Any(d => d.correoDentista == dentista.correoDentista && d.idDentista != dentista.idDentista);
             if (correodentista)
             {
                 TempData["Mensaje"] = "El correo escrito ya está asignado a un dentista. Intente con otro correo.";

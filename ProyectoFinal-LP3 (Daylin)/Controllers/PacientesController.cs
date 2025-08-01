@@ -56,7 +56,7 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         [HttpPost]
         public IActionResult Editar(PacienteViewModel paciente)
         {
-            var cedulaexistente = _context.Pacientes.Any(p => p.cedulaPaciente == paciente.cedulaPaciente);
+            var cedulaexistente = _context.Pacientes.Any(p => p.cedulaPaciente == paciente.cedulaPaciente && p.IdPaciente != paciente.IdPaciente);
             if (cedulaexistente)
             {
                 TempData["Mensaje"] = "Esta cedula es de otro paciente. Por favor revisar detenidamente los dígitos de la misma.";
