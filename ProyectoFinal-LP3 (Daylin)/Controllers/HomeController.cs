@@ -33,5 +33,10 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
         {
             return View();
         }
+
+        public IActionResult Experiencia()
+        {
+            return View();
+        }
     }
 }
