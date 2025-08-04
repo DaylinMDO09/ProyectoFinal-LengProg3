@@ -52,18 +52,18 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
                 }).ToList();
 
             ViewBag.Dentistas = _context.Dentistas
-            .Select(d => new SelectListItem
-            {
-                Value = d.idDentista.ToString(),
-                Text = d.nombreDentista
-            }).ToList();
+                .Select(d => new SelectListItem
+                {
+                    Value = d.idDentista.ToString(),
+                    Text = d.nombreDentista
+                }).ToList();
 
             ViewBag.Motivos = _context.Motivos
-            .Select(m => new SelectListItem
-            {
-                Value = m.idMotivo.ToString(),
-                Text = m.descripcionMotivo
-            }).ToList();
+                .Select(m => new SelectListItem
+                {
+                    Value = m.idMotivo.ToString(),
+                    Text = m.descripcionMotivo
+                }).ToList();
 
             //if (cita.fechaCita.Date < DateTime.Now.Date)
             //{
@@ -71,14 +71,14 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
             //    return View("Index", cita);
             //}            
 
-            DateTime fechahoraCita = cita.fechaCita.Date.Add(cita.horaCita);
-            if (fechahoraCita <= DateTime.Now)
-            {
-                TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha y hora indicadas no son correctas. Por favor indicar una fecha y hora a futuro.";
-                return View("Index", cita);
-            }
+                DateTime fechahoraCita = cita.fechaCita.Date.Add(cita.horaCita);
+                if (fechahoraCita <= DateTime.Now)
+                {
+                    TempData["Mensaje"] = "No es posible agendar esta cita porque la fecha y hora indicadas no son correctas. Por favor indicar una fecha y hora a futuro.";
+                    return View("Index", cita);
+                }
 
-            DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
+                DateTime inicioCita = cita.fechaCita.Add(cita.horaCita);
                 DateTime finCita = inicioCita.AddMinutes(cita.duracionCita);
 
                 var citarepetida = _context.Citas.Where(c => c.idDentista == cita.idDentista
