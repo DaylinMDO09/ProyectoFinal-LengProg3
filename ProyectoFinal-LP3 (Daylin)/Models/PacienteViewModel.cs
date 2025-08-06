@@ -14,6 +14,8 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         public string nombrePaciente { get; set; }
 
         [Required(ErrorMessage ="La cedula del paciente debe ser ingresada")]
+        [MinLength(11, ErrorMessage = "La cédula debe contener 11 dígitos.")]
+        [StringLength(11)]
         [Column("CEDULA")]
         [Display(Name = "Cédula del paciente")]
         public string cedulaPaciente { get; set;}
@@ -21,6 +23,7 @@ namespace ProyectoFinal_LP3__Daylin_.Models
         [Phone]
         [Required(ErrorMessage = "El número telefónico del paciente debe ser ingresado")]
         [MinLength(10, ErrorMessage = "El número telefónico debe tener 10 dígitos")]
+        [StringLength(10)]
         [Column("TELEFONOPACIENTE")]
         [Display(Name = "Numero de telefono")]
         public string telefonoPaciente { get; set;}
