@@ -105,7 +105,7 @@ namespace ProyectoFinal_LP3__Daylin_.Controllers
 
             foreach (var p in pacientes)
             {
-                csv.AppendLine($"\"{p.IdPaciente}\",\"{p.nombrePaciente}\",\"{p.cedulaPaciente}\",\"{p.telefonoPaciente}\"");
+                csv.AppendLine($"\"{p.IdPaciente}\",\"{p.nombrePaciente}\",\"'{p.cedulaPaciente}'\",\"{p.telefonoPaciente}\"");
             }
 
             var bom = Encoding.UTF8.GetPreamble();
