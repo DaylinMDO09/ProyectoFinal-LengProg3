@@ -4729,11 +4729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\ProyectoFinal-LP3 (Daylin).csproj",
+      "projectUniqueName": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\ProyectoFinal-LP3 (Daylin).csproj",
       "projectName": "ProyectoFinal-LP3 (Daylin)",
-      "projectPath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\ProyectoFinal-LP3 (Daylin).csproj",
+      "projectPath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\ProyectoFinal-LP3 (Daylin).csproj",
       "packagesPath": "C:\\Users\\Daylin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\obj\\",
+      "outputPath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4813,7 +4813,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

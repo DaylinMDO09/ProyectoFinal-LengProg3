@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eodlQbVmOjw=",
+  "dgSpecHash": "nfmR7/AwSnk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\ProyectoFinal-LP3 (Daylin).csproj",
+  "projectFilePath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\ProyectoFinal-LP3 (Daylin).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daylin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Daylin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
