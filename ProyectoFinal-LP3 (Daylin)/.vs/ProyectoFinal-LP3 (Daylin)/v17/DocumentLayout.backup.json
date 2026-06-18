@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\8vo cuatrimestre\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\8vo cuatrimestre\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\8vo cuatrimestre\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\8vo cuatrimestre\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CitasController.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\CitasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitasController.cs",
@@ -68,8 +68,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T02:43:09.63Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -79,7 +78,7 @@
               "RelativeDocumentMoniker": "Models\\CitaViewModel.cs",
               "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\CitaViewModel.cs",
               "RelativeToolTip": "Models\\CitaViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAD0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T02:44:04.982Z",
               "IsPinned": true,
@@ -108,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
@@ -126,7 +125,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-19T02:16:04.444Z",
               "EditorCaption": ""
