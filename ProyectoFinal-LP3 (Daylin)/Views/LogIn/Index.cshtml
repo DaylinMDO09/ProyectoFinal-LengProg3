@@ -1,0 +1,211 @@
+﻿@model ProyectoFinal_LP3__Daylin_.Models.LogInViewModel
+
+@{
+    ViewData["Title"] = "Inicio de Sesión";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Clínica Dental - Login</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#0099ff,#00c6ff,#8fd3ff);
+            font-family: 'Segoe UI',sans-serif;
+        }
+
+        .login-card {
+            width: 900px;
+            max-width: 95%;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,.25);
+        }
+
+        .left {
+            background: linear-gradient(180deg,#0d6efd,#0dcaf0);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            min-height: 550px;
+        }
+
+            .left i {
+                font-size: 100px;
+                margin-bottom: 25px;
+            }
+
+            .left h2 {
+                font-weight: bold;
+            }
+
+            .left p {
+                text-align: center;
+                margin-top: 15px;
+                opacity: .9;
+            }
+
+        .right {
+            padding: 50px;
+        }
+
+        .titulo {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            height: 48px;
+        }
+
+        .btn-login {
+            background: #0d6efd;
+            color: white;
+            border-radius: 12px;
+            height: 50px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+            .btn-login:hover {
+                background: #0b5ed7;
+                transform: scale(1.02);
+            }
+
+        .input-group-text {
+            border-radius: 12px 0 0 12px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-card">
+
+        <div class="row g-0">
+
+            <!-- Lado izquierdo -->
+
+            <div class="col-md-5 left">
+
+                <i class="fa-solid fa-tooth"></i>
+
+                <h2>Clínica Dental</h2>
+
+                <h4>SmileCare</h4>
+
+                <p>
+                    Sistema de Gestión de Pacientes,
+                    Citas, Tratamientos y Expedientes.
+                </p>
+
+            </div>
+
+            <!-- Lado derecho -->
+
+            <div class="col-md-7 right">
+
+                <h2 class="titulo text-center mb-4">
+                    Bienvenido
+                </h2>
+
+                <p class="text-center text-muted mb-4">
+                    Inicie sesión para continuar
+                </p>
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger">
+                        @ViewBag.Error
+                    </div>
+                }
+
+                <form asp-action="Index" method="post">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Usuario
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+
+                            <input asp-for="Usuario" class="form-control" />
+
+                        </div>
+
+                        <span asp-validation-for="Usuario" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Contraseña
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+
+                            <input asp-for="Password" class="form-control" />
+
+                        </div>
+
+                        <span asp-validation-for="Password" class="text-danger"></span>
+
+                    </div>
+
+                    <button class="btn btn-login w-100">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Iniciar Sesión
+                    </button>
+
+                </form>
+
+                <hr>
+
+                <div class="text-center text-muted">
+
+                    © 2026 Clínica Dental SmileCare
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

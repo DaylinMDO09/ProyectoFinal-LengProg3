@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal_LP3__Daylin_.Models;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +8,13 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("BaseDeDatos")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tiempo de espera de la sesión
+    options.Cookie.HttpOnly = true; // La cookie solo es accesible a través de HTTP
+    options.Cookie.IsEssential = true; // La cookie es esencial para la aplicación
+});
 
 var app = builder.Build();
 
@@ -23,12 +29,14 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseSession(); // Habilitar el uso de sesiones
+
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=LogIn}/{action=Index}/{id?}");
 
 app.Run();
