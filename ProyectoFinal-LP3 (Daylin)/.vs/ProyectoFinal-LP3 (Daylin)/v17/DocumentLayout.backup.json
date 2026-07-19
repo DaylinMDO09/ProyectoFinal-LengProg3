@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\8vo cuatrimestre\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|c:\\users\\daylin\\desktop\\documentos importantes\\tareas 2025\\8vo cuatrimestre\\lenguaje de programacion iii\\actividadfinal\\proyectofinal-lengprog3\\proyectofinal-lp3 (daylin)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6970B31B-FEC4-4183-AE52-D2B85204209E}|ProyectoFinal-LP3 (Daylin).csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Lista.cshtml",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Citas\\Lista.cshtml",
               "RelativeDocumentMoniker": "Views\\Citas\\Lista.cshtml",
@@ -75,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CitasController.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\CitasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitasController.cs",
@@ -88,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CitaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\CitaViewModel.cs",
               "RelativeDocumentMoniker": "Models\\CitaViewModel.cs",
@@ -102,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Citas\\Editar.cshtml",
               "RelativeDocumentMoniker": "Views\\Citas\\Editar.cshtml",
@@ -114,8 +118,29 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-16T22:45:31.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -128,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LogInController.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\LogInController.cs",
               "RelativeDocumentMoniker": "Controllers\\LogInController.cs",
@@ -141,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LogInViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\LogInViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LogInViewModel.cs",
@@ -154,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Views\\LogIn\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\LogIn\\Index.cshtml",
@@ -166,16 +191,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
@@ -187,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PacientesController.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Controllers\\PacientesController.cs",
               "RelativeDocumentMoniker": "Controllers\\PacientesController.cs",
@@ -211,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PacienteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Daylin\\Desktop\\Documentos Importantes\\Tareas 2025\\8VO CUATRIMESTRE\\LENGUAJE DE PROGRAMACION III\\ActividadFinal\\ProyectoFinal-LengProg3\\ProyectoFinal-LP3 (Daylin)\\Models\\PacienteViewModel.cs",
               "RelativeDocumentMoniker": "Models\\PacienteViewModel.cs",
